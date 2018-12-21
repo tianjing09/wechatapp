@@ -1,0 +1,26 @@
+<!--pages/lineBar/lineBar.wxml-->
+<view class="bgView" style="width: {{viewWidth}}px; height: {{viewHeight}}px">
+    <view class='topView' style="width: {{viewWidth}}px; height: {{barHeight}}px">
+      <view class="leftKeys" style="width: 28px; height: {{barHeight}}px">
+        <block wx:for-items="{{leftKeys}}" wx:for-item="key" wx:key="*item">
+         <view class='leftKey'>{{key}}</view>
+        </block>
+      </view>
+      <view class='yLine' style="width: 2px; height:{{barHeight}}px"></view>
+      <canvas canvas-id='lineBar' class='lineBar' style="width: {{barWidth}}px; height:{{barHeight}}px">
+      </canvas>
+      <view class="leftKeys" style="width: 30px; height: {{barHeight}}px">
+        <block wx:for-items="{{rightKeys}}" wx:for-item="key" wx:key="*item">
+         <view class='rightKey'>{{key}}</view>
+        </block>
+      </view>
+    </view>
+    <view class='bottomView' style="width: {{viewWidth}}px; height: 40px">
+      <view class='xLine' style="width: {{barWidth}}px; height: 2px"></view>
+      <view class='bottomKeys' style="width: {{barWidth}}px; height: 38px">
+        <block wx:for-items="{{keys}}" wx:for-item="key" wx:key="*item">
+        <view class='key'>{{key}}</view>
+        </block>
+      </view>
+    </view>
+</view>

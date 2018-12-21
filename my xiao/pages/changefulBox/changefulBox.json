@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "perBox": "../perBox/perBox",
+    "selectView": "../selectView/selectView"
+  }
+}

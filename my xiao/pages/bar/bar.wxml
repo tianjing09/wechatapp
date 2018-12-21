@@ -1,0 +1,6 @@
+<!--pages/bar/bar.wxml-->
+<view class='bgView' style='width:{{viewWidth}}px; height:{{viewHeight}}px'>
+  <block wx:for-items="{{processData}}" wx:for-item="line" wx:key="*item">
+    <view class='lineView'>{{line}}</view>
+  </block>
+</view>

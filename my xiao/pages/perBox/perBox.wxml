@@ -1,0 +1,4 @@
+<!--pages/perBox/perBox.wxml-->
+<view class='box' bindtap='onSelect' wx:if="{{boxType == 1}}">{{text}}</view>
+<input class='box' type='number' value='{{text}}' wx:elif='{{boxType == 2}}'></input>
+<view class='box' wx:else>null</view>

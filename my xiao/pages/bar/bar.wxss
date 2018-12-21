@@ -1,0 +1,9 @@
+/* pages/bar/bar.wxss */
+.bgView {
+  background-color: pink;
+  display: flex;
+}
+.lineView {
+  background-color: green;
+  flex: 1;
+}

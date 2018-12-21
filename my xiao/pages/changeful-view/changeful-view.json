@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "changefulView",
+  "usingComponents": {
+    "changefulBox": "../changefulBox/changefulBox"
+  }
+}

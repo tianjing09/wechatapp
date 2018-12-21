@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<view class='bg'>
+ <text>pages/test/test.wxml</text>
+ <bar id='bar' lineData="{{line}}" viewWidth="{{barWidth}}" viewHeight='{{barHeight}}'></bar>
+ <button bindtap='tap'>vertify</button>
+ <lineBar id='lineBar' viewWidth='{{lineBarWidth}}' viewHeight='{{lineBarHeight}}'></lineBar>
+</view>

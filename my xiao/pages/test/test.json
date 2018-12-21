@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "breakLine",
+  "usingComponents": {
+    "bar": "../bar/bar",
+    "lineBar": "../lineBar/lineBar"
+  }
+}

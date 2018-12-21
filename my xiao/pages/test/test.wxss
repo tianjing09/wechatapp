@@ -1,0 +1,7 @@
+/* pages/test/test.wxss */
+.bg {
+ background-color: greenyellow;
+ position: absolute;
+ width:100%;
+ height: 100%
+}

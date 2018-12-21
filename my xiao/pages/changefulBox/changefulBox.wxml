@@ -1,0 +1,23 @@
+<view class='bg' style="width:{{viewWidth}}px; height:{{viewHeight}}px">
+ <view class='topView' id='ttt' style='left:{{perW}}px; width:{{boxW}}px; height:{{perH}}px'>
+   <block wx:for-items="{{topKeys}}" wx:for-item="top" wx:key="*item">
+     <view class='topKey'>{{top.name}}</view>
+   </block>
+ </view>
+ <view class='leftView' style='top:{{perH}}px; width:{{perW}}px; height:{{boxH}}px'>
+   <block wx:for-items="{{leftKeys}}" wx:for-item="left" wx:key="*item">
+     <view class='leftKey'>{{left.name}}</view>
+   </block>
+ </view>
+ <view class='box' style='top:{{perH}}px; left:{{perW}}px; width:{{boxW}}px; height:{{boxH}}px'> 
+   <block wx:for-items='{{leftKeys}}' wx:for-item="left" wx:for-index="leftIndex" wx:key="id">
+     <view class='leftBoxView'>
+        <block wx:for-items='{{topKeys}}' wx:for-item='top' wx:for-index='topIndex' wx:key="id">
+          <perBox class='perBox' boxId="{{top.id + '-' + left.id}}" id="{{top.id + '-' + left.id}}" bindonSelect="onSelect" boxType="{{datas[top.id + '-' + left.id]['type']}}" text="{{datas[top.id + '-' + left.id]['text']}}" selectData="{{datas[top.id + '-' + left.id]['selectData']}}">
+          </perBox>
+       </block>
+     </view>
+   </block>
+ </view>
+ <selectView class='select' id='select' binddidSelect='didSelect' style="top:{{selectTop}}px; left:{{selectLeft}}px"></selectView>
+</view>

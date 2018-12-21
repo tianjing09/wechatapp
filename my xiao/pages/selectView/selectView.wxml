@@ -1,0 +1,8 @@
+<!--pages/selectView/selectView.wxml-->
+<cover-view class='bg' event-model="bubble" style="width={{vW}}px; height={{vH}}px" hidden='{{isShow}}'>
+  <block wx:for='{{data}}' wx:key='index'>
+    <cover-view class="select {{item == selectText ? 'selected':''}}" id='{{index}}' bindtap='_select'>
+     {{item}}
+    </cover-view>
+  </block>
+</cover-view>

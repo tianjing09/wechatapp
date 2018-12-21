@@ -1,0 +1,20 @@
+/* pages/selectView/selectView.wxss */
+.bg {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.select {
+  text-align: center;
+  background: wheat;
+  color: black;
+  flex: 1;
+  min-width:100px;
+  height:20px;
+}
+
+.selected {
+  background-color: green;
+}

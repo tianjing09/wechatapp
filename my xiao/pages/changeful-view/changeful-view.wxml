@@ -1,0 +1,3 @@
+<view class='allBg'>
+  <changefulBox id='box' viewWidth='{{viewWidth}}' viewHeight='{{viewHeight}}'></changefulBox>
+</view>
